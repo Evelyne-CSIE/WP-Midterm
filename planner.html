@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+    <title>StudyBloom | Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Study<span>Bloom</span> ✿</a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="methods.html">Study Methods</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a class="current" href="planner.html">Study Planner</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner green-banner">
+            <div class="container center">
+                <p class="small-label">ONE SESSION AT A TIME</p>
+                <h1>Let's make a study plan.</h1>
+                <p>Estimate your focus and break time before you begin.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <p class="small-label center">INTERACTIVE FEATURE 02</p>
+            <h2 class="center">Study Time Calculator</h2>
+            <p class="center section-description">Enter your session plan. JavaScript will calculate how much time you need in total.</p>
+
+            <div class="planner-grid">
+                <div class="calculator-form">
+                    <h3>Your study session</h3>
+                    <p>Choose your numbers below. Plan between 1 and 8 focus sessions.</p>
+
+                    <label for="sessions">Number of focus sessions</label>
+                    <input id="sessions" type="number" min="1" max="8" value="4">
+
+                    <label for="focus">Minutes per focus session</label>
+                    <input id="focus" type="number" min="1" value="25">
+
+                    <label for="breaks">Minutes per short break</label>
+                    <input id="breaks" type="number" min="0" value="5">
+
+                    <div class="calculator-buttons">
+                        <button class="button button-green" onclick="calculateStudyTime()">Calculate total</button>
+                        <button class="button button-outline" onclick="resetStudyTime()">Reset</button>
+                    </div>
+                </div>
+
+                <div class="calculator-result">
+                    <p class="small-label">YOUR ESTIMATED STUDY TIME</p>
+                    <p class="total-time" id="total-time">0 minutes</p>
+                    <p id="time-breakdown">Press Calculate to see your study plan.</p>
+                    <p class="timeline-title">Your Study Session Flow</p>
+                    <div class="study-timeline" id="study-timeline">
+                        <p class="timeline-empty">Your focus and break cards will appear here.</p>
+                    </div>
+                    <div class="result-note">
+                        <p>Breaks are counted between sessions, not after the last session.</p>
+                        <p>This is a planning estimate. You can adjust it to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section light-section">
+            <div class="container">
+                <p class="small-label center">SAMPLE WEEKLY PLAN</p>
+                <h2 class="center">A simple study schedule</h2>
+                <p class="center section-description">Use this example as inspiration. Your own routine can be different.</p>
+
+                <div class="table-box">
+                    <table class="study-table">
+                        <tr>
+                            <th>Day</th>
+                            <th>Study focus</th>
+                            <th>One small goal</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Programming</td>
+                            <td>Complete one coding exercise</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Mathematics</td>
+                            <td>Solve five practice questions</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>English</td>
+                            <td>Review vocabulary and speak aloud</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Review day</td>
+                            <td>Test yourself without your notes</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Project work</td>
+                            <td>Finish one project section</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="closing-message">
+                <p class="small-label">KEEP GOING</p>
+                <h2>Progress looks different every day.</h2>
+                <p>Use a plan as a guide, and remember that taking breaks is also part of learning.</p>
+                <a class="text-link" href="methods.html">Find a method for your next session →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p><strong>StudyBloom ✿</strong><br>One step at a time.</p>
+            <p>A student-made Web Programming midterm project.</p>
+            <p><a href="resources.html">Explore learning resources</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>StudyBloom | Study Methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Study<span>Bloom</span> ✿</a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="methods.html">Study Methods</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="planner.html">Study Planner</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner lavender-banner">
+            <div class="container center">
+                <p class="small-label">FIND WHAT WORKS FOR YOU</p>
+                <h1>Study smarter, gently.</h1>
+                <p>Different tasks need different methods. Choose a category to explore.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <p class="small-label center">INTERACTIVE FEATURE 01</p>
+            <h2 class="center">Explore study methods</h2>
+            <p class="center section-description">Click one of the buttons. We will show methods that match your choice.</p>
+
+            <div class="filter-buttons">
+                <button class="filter-button active" onclick="filterMethods('all', this)">All Methods</button>
+                <button class="filter-button" onclick="filterMethods('focus', this)">Focus</button>
+                <button class="filter-button" onclick="filterMethods('memory', this)">Memory</button>
+                <button class="filter-button" onclick="filterMethods('planning', this)">Planning</button>
+            </div>
+
+            <p class="filter-result" id="filter-result">Showing all 6 methods.</p>
+
+            <div class="method-grid">
+                <div class="method-card focus">
+                    <span class="method-number">01 / FOCUS</span>
+                    <h3>Pomodoro Technique</h3>
+                    <p>Focus on one task for a short period, then take a short break. A common starting point is 25 minutes of focus and 5 minutes of rest.</p>
+                    <p class="method-example"><strong>Try it:</strong> Put your phone away and finish one small task before the break.</p>
+                </div>
+
+                <div class="method-card memory">
+                    <span class="method-number">02 / MEMORY</span>
+                    <h3>Active Recall</h3>
+                    <p>Close your notes and try to remember what you studied. Checking your answer helps you notice which parts need another review.</p>
+                    <p class="method-example"><strong>Try it:</strong> Explain a topic without looking at your textbook.</p>
+                </div>
+
+                <div class="method-card planning">
+                    <span class="method-number">03 / PLANNING</span>
+                    <h3>Time Blocking</h3>
+                    <p>Give different tasks a place in your schedule. Leave realistic time for classes, meals, and rest.</p>
+                    <p class="method-example"><strong>Try it:</strong> Reserve 30 minutes for one difficult homework question.</p>
+                </div>
+
+                <div class="method-card memory">
+                    <span class="method-number">04 / MEMORY</span>
+                    <h3>Spaced Review</h3>
+                    <p>Return to important topics on different days instead of reviewing everything only the night before an exam.</p>
+                    <p class="method-example"><strong>Try it:</strong> Review today's notes again tomorrow.</p>
+                </div>
+
+                <div class="method-card focus">
+                    <span class="method-number">05 / FOCUS</span>
+                    <h3>One-Task Rule</h3>
+                    <p>Choose one clear goal for a session. Switching between many tasks can make it harder to notice your progress.</p>
+                    <p class="method-example"><strong>Try it:</strong> Solve three practice problems before opening another tab.</p>
+                </div>
+
+                <div class="method-card planning">
+                    <span class="method-number">06 / PLANNING</span>
+                    <h3>Break It Down</h3>
+                    <p>Turn a large project into smaller steps. Starting with something easy to finish can make the next step less intimidating.</p>
+                    <p class="method-example"><strong>Try it:</strong> Divide a report into outline, draft, and revision.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section light-section">
+            <div class="container split-section">
+                <div>
+                    <p class="small-label">MAKE IT PERSONAL</p>
+                    <h2>Start with one method.</h2>
+                    <p>You do not need to use every study technique. Try one method for a few sessions, notice how it feels, and adjust it to suit your schedule.</p>
+                    <a class="button button-green" href="planner.html">Plan a study session</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=85" alt="Books on shelves in a quiet learning space">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p><strong>StudyBloom ✿</strong><br>One step at a time.</p>
+            <p>A student-made Web Programming midterm project.</p>
+            <p><a href="resources.html">Explore learning resources</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
