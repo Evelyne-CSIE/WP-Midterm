@@ -194,7 +194,7 @@ p {
 .home-hero {
     background-color: #f6eee5;
     background-image: linear-gradient(to right, #fcfaf7 0%, #fcfaf7e8 29%, #fcfaf7a6 56%, #fcfaf71a 100%),
-                      url("images/hero-study-desk.png");
+                      url("hero-study-desk.png");
     background-size: cover;
     background-position: center;
     padding-top: 115px;
@@ -362,19 +362,19 @@ p {
 .lavender-banner {
     background-color: #f0eaf5;
     background-image: linear-gradient(#f0eaf5db, #f0eaf5e6),
-                      url("images/banner-study-corner.png");
+                      url("banner-study-corner.png");
 }
 
 .peach-banner {
     background-color: #f9ebe4;
     background-image: linear-gradient(#f9ebe4db, #f9ebe4e6),
-                      url("images/banner-study-corner.png");
+                      url("banner-study-corner.png");
 }
 
 .green-banner {
     background-color: #e7efe5;
     background-image: linear-gradient(#e7efe5db, #e7efe5e6),
-                      url("images/banner-study-corner.png");
+                      url("banner-study-corner.png");
 }
 
 .filter-buttons {
@@ -781,7 +781,7 @@ p {
         padding-bottom: 70px;
         background-position: 62% center;
         background-image: linear-gradient(#fcfaf7da, #fcfaf7ed),
-                          url("images/hero-study-desk.png");
+                          url("hero-study-desk.png");
     }
 
     .hero-grid {
